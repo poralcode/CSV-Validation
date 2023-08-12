@@ -18,7 +18,7 @@ import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) {
-        String csvFilePath = "C:\\Users\\alejo\\IdeaProjects\\CSV-Validation\\out\\production\\CSV-Validation\\writers.csv";
+        String csvFilePath = "writers.csv"; //File Path of CSV file.
 
         try (BufferedReader br = new BufferedReader(new FileReader(csvFilePath))) {
             String header = br.readLine(); // Read and print the header
