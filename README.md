@@ -27,7 +27,7 @@ This program reads a CSV file, validates the input data, and outputs the data to
 
 | FIELD           | VALIDATION | ERROR MESSAGE | CONDITIONS     |
 | ------------- | -------------- | ------------------- | ------------------ |
-| id  | Mandatory, Numerical  | Error Required, Error Format | Mandtory Item. Numerical values only.
+| id  | Mandatory, Numerical  | Error Required, Error Format | Mandtory Item., Numerical values only.
 | name  | Mandatory, Length limitation  | Error required, Error limit over | Mandatory item. 100 characters only.
 | birthday  | Mandatory, Format  | Error required, Error format | Mandatory Item. yyyy/mm/dd or yyyy-mm-dd format only 
 | gender  | Format  | Error format | **Male** or **Female** (uppercase, lowercase, or empty data is allowed.)
