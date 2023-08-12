@@ -1,6 +1,6 @@
 # CSV-Validation - Java 8
 
-An example of implementation on how to reads a CSV file, validate the input data, and output the data to standard output. It performs validation on fields like **id**, **name**, **birthday**, **gender**, and **phone number** based on specific rules. The validated data is output along with error messages for invalid data. The header of the CSV file is excluded from validation.
+An example of how to reads a CSV file, validate the input data, and output the data to standard output. It performs validation on fields like **id**, **name**, **birthday**, **gender**, and **phone number** based on specific rules. The validated data is output along with error messages for invalid data. The header of the CSV file is excluded from validation.
 
 There are only two classes in this project.<br>
 [Main.java ](https://github.com/poralcode/CSV-Validation/blob/master/src/Main.java "Main.java ")- The main class that contains the logic for reading the CSV file.<br>
