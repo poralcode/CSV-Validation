@@ -1,10 +1,9 @@
 /*
- * Author: Alejo Rostata
+ * Author: polarcode
  * Description: This program reads a CSV file, validates the input data, and outputs the data to standard output.
  * It performs validation on fields like id, name, birthday, gender, and phone number based on specific rules.
  * The validated data is output along with error messages for invalid data. The header of the CSV file is excluded
  * from validation.
- * OUTLINE: https://drive.google.com/drive/folders/1n2_GFtIUoR0O2T_m51p6ALWnSkkWJ6_r
  *
  * SAMPLE INPUT: writers.csv
  * id,name,birthday,gender,phone-number
