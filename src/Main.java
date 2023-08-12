@@ -1,5 +1,4 @@
 /*
- * GOGO IT Lab, Inc. skill assessment for Java Developer position.
  * Author: Alejo Rostata
  * Description: This program reads a CSV file, validates the input data, and outputs the data to standard output.
  * It performs validation on fields like id, name, birthday, gender, and phone number based on specific rules.
