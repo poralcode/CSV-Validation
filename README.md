@@ -27,9 +27,9 @@ This program reads a CSV file, validates the input data, and outputs the data to
 
 | FIELD           | VALIDATION | ERROR MESSAGE | CONDITIONS     |
 | ------------- | -------------- | ------------------- | ------------------ |
-| id  | Mandatory<br>Numerical  | Error Required<br>Error Format | Mandtory Item.<br>Numerical values only.
-| name  | Mandatory, Length limitation  | Error required<br>Error limit over | Mandatory item.<br>100 characters only.
-| birthday  | Mandatory<br>Format  | Error required<br>Error format | Mandatory Item, yyyy/mm/dd or yyyy-mm-dd format only 
+| id  | Mandatory, Numerical  | Error Required, Error Format | Mandtory Item. Numerical values only.
+| name  | Mandatory, Length limitation  | Error required, Error limit over | Mandatory item. 100 characters only.
+| birthday  | Mandatory, Format  | Error required, Error format | Mandatory Item. yyyy/mm/dd or yyyy-mm-dd format only 
 | gender  | Format  | Error format | **Male** or **Female** (uppercase, lowercase, or empty data is allowed.)
-| phone-number  | Mandatory<br>Format  |Error required<br>Error format| Mandatory item. Format should be 000-0000-0000 or 00-0000-0000 or 000-000-0000 or 0000-00-0000 half-width number format or 00000000000 half-width number format around 10-11 characters.
+| phone-number  | Mandatory, Format  |Error required, Error format| Mandatory item. Format should be 000-0000-0000 or 00-0000-0000 or 000-000-0000 or 0000-00-0000 half-width number format or 00000000000 half-width number format around 10-11 characters.
 
