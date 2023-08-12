@@ -1,6 +1,6 @@
 /*
  * Validation Class
- * Author: Alejo Rostata
+ * Author: polarcode
  * Description: This class provides validation logic for the fields in a CSV file. It performs checks for id, name,
  * birthday, gender, and phone number based on specific rules. If the validation fails, appropriate error messages
  * are returned. If validation passes, the original value is returned.
@@ -17,7 +17,7 @@ public class Validation {
             "Error format"
     };
 
-    //I usually used lambda, it's beautiful, short and clean.
+    //Using lambda, it's beautiful, short, and clean.
     public static String validateField(int index, String value) {
         return switch (index) {
             case 0 -> // id
