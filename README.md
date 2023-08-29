@@ -1,4 +1,4 @@
-# CSV-Validation - Java 8
+# CSV-Validation
 
 An example of how to reads a CSV file, validate the input data, and output the data to standard output. It performs validation on fields like **id**, **name**, **birthday**, **gender**, and **phone number** based on specific rules. The validated data is output along with error messages for invalid data. The header of the CSV file is excluded from validation.
 
