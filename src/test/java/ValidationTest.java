@@ -16,20 +16,45 @@ public class ValidationTest {
     }
 
     @Test
-    public void testValidateFieldBirthdayEmpty() {
-        String result = Validation.validateField(2, "");
-        assertEquals("Error required", result);
+    public void testValidateFieldNameTooLong() {
+        String name = "ThisIsAReallyLongNameThatExceedsTheMaximumLengthAllowedByValidation";
+        String result = Validation.validateField(1, name);
+        assertEquals(name, result);
     }
 
     @Test
-    public void testValidateFieldGender() {
-        String result = Validation.validateField(3, "male");
-        assertEquals("male", result);
+    public void testValidateFieldBirthdayValid() {
+        String result = Validation.validateField(2, "1980/02/29");
+        assertEquals("1980/02/29", result);
     }
 
     @Test
-    public void testValidateFieldPhoneNumber() {
-        String result = Validation.validateField(4, "");
-        assertEquals("Error required", result);
+    public void testValidateFieldBirthdayInvalid() {
+        String result = Validation.validateField(2, "02/29/1980");
+        assertEquals("Error format", result);
+    }
+
+    @Test
+    public void testValidateFieldGenderValid() {
+        String result = Validation.validateField(3, "female");
+        assertEquals("female", result);
+    }
+
+    @Test
+    public void testValidateFieldGenderInvalid() {
+        String result = Validation.validateField(3, "unknown");
+        assertEquals("Error format", result);
+    }
+
+    @Test
+    public void testValidateFieldPhoneNumberValid() {
+        String result = Validation.validateField(4, "09011112222");
+        assertEquals("09011112222", result);
+    }
+
+    @Test
+    public void testValidateFieldPhoneNumberInvalid() {
+        String result = Validation.validateField(4, "invalidPhoneNumber");
+        assertEquals("Error format", result);
     }
 }
