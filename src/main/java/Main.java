@@ -20,7 +20,7 @@ import java.util.logging.*;
 public class Main {
     private static final Logger LOGGER = Logger.getLogger(Main.class.getName());
     public static void main(String[] args) {
-        String csvFilePath = "C:\\Users\\alejo\\Downloads\\writers.csv"; //File Path of CSV file.
+        String csvFilePath = "writers.csv"; //File Path of CSV file.
 
         try (BufferedReader br = new BufferedReader(new FileReader(csvFilePath))) {
             String header = br.readLine(); // Read and print the header
