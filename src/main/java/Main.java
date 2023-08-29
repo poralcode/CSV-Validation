@@ -15,8 +15,11 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.logging.*;
 
 public class Main {
+    private static final Logger LOGGER = Logger.getLogger(Main.class.getName());
+
     public static void main(String[] args) {
         String csvFilePath = "C:\\Users\\alejo\\Downloads\\writers.csv"; //File Path of CSV file.
 
@@ -28,7 +31,7 @@ public class Main {
                     .map(Main::validateFields) //Validate each field in the line.
                     .forEach(System.out::println); //Print the validated line.
         } catch (IOException e) {
-            e.printStackTrace(); //It's usually better to use a more robust logging, but for simplicity we'll just use printStackTrace().
+            LOGGER.log(Level.SEVERE, "An error occurred while reading the CSV file", e);
         }
     }
 

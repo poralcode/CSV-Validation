@@ -17,7 +17,6 @@ public class Validation {
             "Error format"
     };
 
-    //Using lambda, it's beautiful, short, and clean.
     public static String validateField(int index, String value) {
         return switch (index) {
             case 0 -> // id
